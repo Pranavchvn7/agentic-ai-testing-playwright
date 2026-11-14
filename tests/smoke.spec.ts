@@ -15,7 +15,9 @@ test.describe("ShopLite smoke tests", () => {
     ).toBeVisible();
 
     await expect(
-      page.getByRole("heading", { name: /aurora wireless keyboard/i })
-    ).toBeVisible();
+  page.getByRole("heading", {
+    name: /^Aurora Wireless Keyboard/
+  })
+).toBeVisible();
   });
 });
