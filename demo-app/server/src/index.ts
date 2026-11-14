@@ -5,6 +5,7 @@ import { randomUUID } from "node:crypto";
 
 const app = express();
 const PORT = 4000;
+const recentOrderSubmissions = new Set<string>();
 
 app.use(cors());
 app.use(express.json());
@@ -26,6 +27,12 @@ app.get("/api/health", (_req, res) => {
 
 app.get("/api/products", (_req, res) => {
   res.json(products);
+});
+
+app.get("/api/products/p-999", (_req, res) => {
+  res.status(500).json({
+    error: "Unable to load this product. Please try again later."
+  });
 });
 
 app.get("/api/products/:productId", (req, res) => {
@@ -82,6 +89,21 @@ app.listen(PORT, () => {
 });
 
 app.post("/api/orders", (req, res) => {
+  const submissionKey = JSON.stringify({
+    customer: req.body?.customer,
+    items: req.body?.items,
+    couponCode: req.body?.couponCode
+  });
+
+  if (recentOrderSubmissions.has(submissionKey)) {
+    res.status(409).json({
+      error: "This order has already been submitted. Please refresh the page."
+    });
+
+    return;
+  }
+
+  recentOrderSubmissions.add(submissionKey);
   const { customer, items, couponCode } = req.body ?? {};
 
   const validationErrors: string[] = [];

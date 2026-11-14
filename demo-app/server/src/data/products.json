@@ -142,5 +142,17 @@
     "rating": 4.8,
     "description": "A compact mechanical keyboard with hot-swappable switches.",
     "imageUrl": "/images/mechanical-keyboard.svg"
-  }
+  },
+  {
+  "id": "p-999",
+  "name": "Unstable Quantum Widget",
+  "category": "Electronics",
+  "price": 999,
+  "currency": "INR",
+  "inStock": true,
+  "stock": 5,
+  "rating": 1.0,
+  "description": "A demo product that triggers a controlled API failure.",
+  "imageUrl": "/images/widget.svg"
+}
 ]
