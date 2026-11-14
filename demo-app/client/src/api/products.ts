@@ -23,3 +23,15 @@ export async function getProducts(): Promise<Product[]> {
 
   return response.json();
 }
+
+export async function getProduct(productId: string): Promise<Product> {
+  const response = await fetch(
+    `${API_BASE_URL}/api/products/${productId}`
+  );
+
+  if (!response.ok) {
+    throw new Error(`Failed to load product: ${response.status}`);
+  }
+
+  return response.json();
+}

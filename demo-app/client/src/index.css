@@ -43,3 +43,27 @@ h2 {
 p {
   margin: 4px 0;
 }
+
+header {
+  background: white;
+  border-bottom: 1px solid #dde1e6;
+}
+
+nav[aria-label="Main navigation"] {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav[aria-label="Main navigation"] a {
+  color: #17202a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+nav[aria-label="Main navigation"] a:hover {
+  text-decoration: underline;
+}

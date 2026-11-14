@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { getProducts, type Product } from "../api/products";
 
 export function ProductCatalogPage() {
@@ -44,13 +45,17 @@ export function ProductCatalogPage() {
 
   return (
     <main>
-      <h1>ShopLite Products</h1>
+      <header>
+        <h1>ShopLite Products</h1>
+      </header>
 
       <ul aria-label="Product catalog">
         {products.map((product) => (
           <li key={product.id}>
             <article>
-              <h2>{product.name}</h2>
+              <h2>
+                <Link to={`/products/${product.id}`}>{product.name}</Link>
+              </h2>
               <p>
                 {product.currency} {product.price}
               </p>
