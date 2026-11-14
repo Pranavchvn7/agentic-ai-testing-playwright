@@ -1,0 +1,30 @@
+name: Exercise idea
+description: Suggest a new AI testing exercise, prompt, or example
+labels: ["enhancement", "exercise"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Exercise title
+    validations:
+      required: true
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: Learning objective
+      description: What should a learner be able to do after completing it?
+    validations:
+      required: true
+
+  - type: textarea
+    id: approach
+    attributes:
+      label: Proposed approach
+      description: Describe the AI approach, Playwright feature, and expected outcome.
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks and review needs
+      description: What could the AI get wrong, and how should a learner verify it?
