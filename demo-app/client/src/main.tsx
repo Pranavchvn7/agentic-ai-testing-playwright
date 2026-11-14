@@ -8,6 +8,8 @@ import { AppHeader } from "./components/AppHeader";
 import { ProductCatalogPage } from "./pages/ProductCatalogPage";
 import { ProductDetailPage } from "./pages/ProductDetailPage";
 import { CartPage } from "./pages/CartPage";
+import { CheckoutPage } from "./pages/CheckoutPage";
+import { OrderConfirmationPage } from "./pages/OrderConfirmationPage";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -19,6 +21,14 @@ createRoot(document.getElementById("root")!).render(
           <Route path="/" element={<ProductCatalogPage />} />
           <Route path="/products/:productId" element={<ProductDetailPage />} />
           <Route path="/cart" element={<CartPage />} />
+          <Route
+            path="/checkout"
+            element={<CheckoutPage />}
+          />
+          <Route
+            path="/order-confirmation"
+            element={<OrderConfirmationPage />}
+          />
         </Routes>
       </CartProvider>
     </BrowserRouter>
