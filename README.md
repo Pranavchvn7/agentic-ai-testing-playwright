@@ -44,7 +44,7 @@ By completing the exercises, you will be able to:
 |---|---|---|
 | 0 | Repository foundation | In progress |
 | 1 | Demo application | Planned |
-| 2 | AI-assisted QA workflow | Planned |
+| 2 | AI-assisted QA workflow | In progress |
 | 3 | Playwright Test Agents | Planned |
 | 4 | Playwright MCP | Planned |
 | 5 | CLI-based AI agents | Planned |
