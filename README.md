@@ -47,7 +47,7 @@ By completing the exercises, you will be able to:
 | 2 | AI-assisted QA workflow | In progress |
 | 3 | Playwright Test Agents | In progress |
 | 4 | Playwright MCP | In progress |
-| 5 | CLI-based AI agents | Planned |
+| 5 | CLI-based AI agents | In progress |
 | 6 | CI, evaluation, and launch | Planned |
 
 ## Planned structure
