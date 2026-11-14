@@ -53,6 +53,11 @@ ShopLite currently supports:
 - Empty-cart state
 - Playwright smoke and cart regression tests
 - GitHub Actions CI with Playwright reports and traces
+- Accessibility scans with axe-core
+- Keyboard-navigation coverage
+- Visual regression baselines for catalog and cart
+- Intentional accessibility defect exercise
+- Test-maintenance exercise
 
 ## In progress
 
@@ -62,6 +67,9 @@ ShopLite currently supports:
 - Order confirmation page
 - Cart clearing after successful checkout
 - API failure and duplicate-submission scenarios
+- Advanced AI evaluation case studies
+- MCP client compatibility matrix
+- Performance and reliability exercises
 
 ## Repository roadmap
 
