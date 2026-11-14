@@ -1,3 +1,5 @@
+[![Playwright Tests](https://github.com/Pranavchvn7/agentic-ai-testing-playwright/actions/workflows/playwright.yml/badge.svg)](https://github.com/Pranavchvn7/agentic-ai-testing-playwright/actions/workflows/playwright.yml)
+
 # Agentic AI Testing with Playwright
 
 A practical, hands-on learning lab for QA engineers who want to use AI
@@ -42,13 +44,13 @@ By completing the exercises, you will be able to:
 
 | Phase | Module | Status |
 |---|---|---|
-| 0 | Repository foundation | In progress |
-| 1 | Demo application | Planned |
-| 2 | AI-assisted QA workflow | In progress |
-| 3 | Playwright Test Agents | In progress |
-| 4 | Playwright MCP | In progress |
-| 5 | CLI-based AI agents | In progress |
-| 6 | CI, evaluation, and launch | Planned |
+| 0 | Repository foundation | Complete |
+| 1 | Demo application | Complete |
+| 2 | AI-assisted QA workflow | Complete |
+| 3 | Playwright Test Agents | Complete |
+| 4 | Playwright MCP | Complete |
+| 5 | CLI-based AI agents | Complete |
+| 6 | CI, evaluation, and launch | Complete |
 
 ## Planned structure
 
@@ -117,3 +119,32 @@ AI-tool compatibility.
 ## License
 
 Released under the [MIT License](LICENSE).
+
+## Quick start
+
+```bash
+git clone [https://github.com/YOUR_USERNAME/agentic-ai-testing-playwright.git](https://github.com/YOUR_USERNAME/agentic-ai-testing-playwright.git)
+cd agentic-ai-testing-playwright
+
+npm install
+npm run demo:install
+npm run demo
+```
+
+Open ShopLite:
+
+```text
+http://localhost:5173
+```
+
+Run the Playwright regression suite:
+
+```bash
+npx playwright test
+```
+
+Open the HTML report:
+
+```bash
+npx playwright show-report
+```
