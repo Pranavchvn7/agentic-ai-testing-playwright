@@ -8,6 +8,13 @@ const PORT = 4000;
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (_req, res) => {
+  res.json({
+    message: "ShopLite API is running",
+    endpoints: ["/api/health", "/api/products"]
+  });
+});
+
 app.get("/api/health", (_req, res) => {
   res.json({
     status: "ok",
