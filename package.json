@@ -1,0 +1,26 @@
+{
+  "name": "agentic-ai-testing-playwright",
+  "version": "1.0.0",
+  "description": "A practical, hands-on learning lab for QA engineers who want to use AI\r responsibly across the testing lifecycle.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pranavchvn7/agentic-ai-testing-playwright.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Pranavchvn7/agentic-ai-testing-playwright/issues"
+  },
+  "homepage": "https://github.com/Pranavchvn7/agentic-ai-testing-playwright#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.65.1"
+  }
+}
