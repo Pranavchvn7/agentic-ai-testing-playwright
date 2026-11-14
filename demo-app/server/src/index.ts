@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+import products from "./data/products.json" with { type: "json" };
 
 const app = express();
 const PORT = 4000;
@@ -13,6 +14,10 @@ app.get("/api/health", (_req, res) => {
     service: "ShopLite API",
     timestamp: new Date().toISOString()
   });
+});
+
+app.get("/api/products", (_req, res) => {
+  res.json(products);
 });
 
 app.listen(PORT, () => {
