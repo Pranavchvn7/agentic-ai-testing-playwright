@@ -37,18 +37,45 @@ By completing the exercises, you will be able to:
 - Use CLI-based AI agents to investigate test failures and improve test suites.
 - Recognize the risks, limitations, and review requirements of AI-generated work.
 - Build a maintainable automation project with documentation and CI.
+- Build and test a complete e-commerce user journey.
+- Use Playwright for UI, API, accessibility, and regression testing.
+
+## Current ShopLite features
+
+ShopLite currently supports:
+
+- Product catalog
+- Product detail pages
+- Add to cart
+- Cart state and item count
+- Cart page with quantity updates and item removal
+- Subtotal, tax, shipping, and total calculation
+- Empty-cart state
+- Playwright smoke and cart regression tests
+- GitHub Actions CI with Playwright reports and traces
+
+## In progress
+
+- Checkout form and validation
+- Coupon code handling
+- Order creation
+- Order confirmation page
+- Cart clearing after successful checkout
+- API failure and duplicate-submission scenarios
 
 ## Repository roadmap
 
 | Phase | Module | Status |
 |---|---|---|
-| 0 | Repository foundation | In progress |
-| 1 | Demo application | Planned |
-| 2 | AI-assisted QA workflow | In progress |
-| 3 | Playwright Test Agents | In progress |
-| 4 | Playwright MCP | In progress |
-| 5 | CLI-based AI agents | In progress |
-| 6 | CI, evaluation, and launch | Planned |
+| 0 | Repository foundation | Complete |
+| 1 | Demo application | Complete |
+| 2 | AI-assisted QA workflow | Complete |
+| 3 | Playwright Test Agents | Complete |
+| 4 | Playwright MCP | Complete |
+| 5 | CLI-based AI agents | Complete |
+| 6 | CI, evaluation, and launch | Complete |
+| 7 | ShopLite checkout journey | In progress |
+| 8 | Advanced AI testing modules | Planned |
 
 ## Planned structure
 
