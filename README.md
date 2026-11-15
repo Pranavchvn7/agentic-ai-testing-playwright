@@ -1,6 +1,6 @@
 # Agentic AI Testing with Playwright
 
-[![Playwright Tests](https://github.com/<Pranavchvn7>/agentic-ai-testing-playwright/actions/workflows/playwright.yml/badge.svg)](https://github.com/<Pranavchvn7>/agentic-ai-testing-playwright/actions/workflows/playwright.yml)
+[![Playwright Tests](https://github.com/Pranavchvn7/agentic-ai-testing-playwright/actions/workflows/playwright.yml/badge.svg)](https://github.com/Pranavchvn7/agentic-ai-testing-playwright/actions/workflows/playwright.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Node.js](https://img.shields.io/badge/Node.js-LTS-green.svg)](https://nodejs.org/)
 
