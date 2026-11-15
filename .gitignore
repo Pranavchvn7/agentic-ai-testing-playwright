@@ -46,3 +46,5 @@ Thumbs.db
 .agent/
 .claude/
 .cursor/
+
+tests/visual/**/*-win32.png
