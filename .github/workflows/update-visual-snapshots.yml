@@ -3,6 +3,9 @@ name: Update visual snapshots
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   update-snapshots:
     runs-on: ubuntu-latest
@@ -10,6 +13,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -17,25 +22,29 @@ jobs:
           node-version: 20
           cache: npm
 
-      - name: Install dependencies
+      - name: Install root dependencies
         run: npm ci
+
+      - name: Install client dependencies
+        run: npm ci --prefix demo-app/client
+
+      - name: Install server dependencies
+        run: npm ci --prefix demo-app/server
 
       - name: Install Playwright browsers
         run: npx playwright install --with-deps chromium
 
-      - name: Start demo application
-        run: npm run demo:start
-
-      - name: Wait for demo application
-        run: npx wait-on http://localhost:5173 http://localhost:4000/api/products
-
       - name: Update visual snapshots
         run: npx playwright test tests/visual --update-snapshots
+
+      - name: Show generated snapshot files
+        run: |
+          find tests/visual -type f -name "*.png" -print
 
       - name: Commit updated snapshots
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add tests/visual
-          git diff --cached --quiet || git commit -m "test: update Linux visual snapshots"
+          git diff --cached --quiet || git commit -m "test: add Linux visual regression baselines"
           git push
