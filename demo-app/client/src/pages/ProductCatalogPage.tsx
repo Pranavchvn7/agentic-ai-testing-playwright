@@ -55,6 +55,10 @@ export function ProductCatalogPage() {
             <article>
               <h2>
                 <Link to={`/products/${product.id}`}>{product.name}</Link>
+                <img
+                  src="/images/keyboard.svg"
+                  alt="Aurora Wireless Keyboard product image"
+                />
               </h2>
               <p>
                 {product.currency} {product.price}
